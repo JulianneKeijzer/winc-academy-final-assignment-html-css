@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign up</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Winc-winc</h1>
+        <h2>~Your online dating app</h2>
+        <img src="sign_up-header-img.avif" alt="A drawed heart with welcome written on it" width="175" height="116">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">The people</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="sign_up.html">Sign up </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="sign_up-form">
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" value="name" name="name" placeholder="e.g. Robin" required><br>
+            </div>
+            <div>
+                <label for="username">Username:</label><br>
+                <input type="text" value="username" name="username" placeholder="e.g. Robin1985" required><br>
+            </div>
+            <div>
+                <label for="selfDescription">About me:</label><br>
+                <textarea id="selfDespriction" name="selfDescription"
+                    placeholder="e.g. hobby's, work, favorite food etc." rows="9"
+                    cols="55">Describe yourself here</textarea><br>
+            </div>
+            <div>
+                <p>My gender:</p>
+                <input type="radio" id="male" name="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="other" value="other">
+                <label for="other">Other</label><br>
+            </div>
+            <div>
+                <p>I'm interested in:</p>
+                <input type="radio" id="males" name="males" value="males">
+                <label for="males">Males</label><br>
+                <input type="radio" id="females" name="females" value="females">
+                <label for="females">Females</label><br>
+                <input type="radio" id="both" name="both" value="both">
+                <label for="both">Both</label><br>
+                <input type="radio" id="none" name="none" value="none">
+                <label for="none">Not male & female genders</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="requiredAge" name="requiredAge" value="requiredAge" required>
+                <label for="requiredAge"> I confirm that my age is 18 years or older</label><br>
+            </div>
+            <div>
+                <label for="age">My age category:</label><br>
+                <select name="age" id="age">
+                    <option value="">Please select your age category</option>
+                    <option value="ageOptionOne">18-25</option>
+                    <option value="ageOptionTwo">26-35</option>
+                    <option value="ageOptionThree">36-45</option>
+                    <option value="ageOptionFour">46-55</option>
+                    <option value="ageOptionFive">56-65</option>
+                    <option value="ageOptionSix">65+</option>
+                </select><br>
+            </div>
+            <div>
+                <input type="checkbox" id="country" name="country" value="country" required>
+                <label for="country"> I confirm that I live in the Netherlands</label><br>
+            </div>
+            <div>
+                <label for="province">The province I live in:</label><br>
+                <select name="province" id="province">
+                    <option value="">Please select the province you live in</option>
+                    <option value="noordHolland">Noord-Holland</option>
+                    <option value="zuidHolland">Zuid-Holland</option>
+                    <option value="zeeland">Zeeland</option>
+                    <option value="noordBrabant">Noord-Braband</option>
+                    <option value="utrecht">Utrecht</option>
+                    <option value="flevoland">Flevoland</option>
+                    <option value="friesland">Friesland</option>
+                    <option value="groningen">Groningen</option>
+                    <option value="drenthe">Drenthe</option>
+                    <option value="overijssel">Overijssel</option>
+                    <option value="gelderland">Gelderland</option>
+                    <option value="limburg">Limburg</option>
+                </select><br>
+            </div>
+            <div>
+                <label for="email">My e-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com" required><br>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>To contact us, please send an e-mail to: winc-winc@datingapp.com</p>
+    </footer>
+</body>
+
+</html>
